@@ -1,67 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Portfolio | Your Name</title>
-  <meta name="description" content="Accessible portfolio of a web developer focused on semantic HTML, WCAG compliance, and modern frontend development.">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#ffffff">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Portfolio | Your Name">
-  <meta property="og:description" content="Accessible and semantic web developer portfolio.">
-  <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<a href="#main" class="skip-link">Skip to main content</a>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">My Portfolio</h2>
 
-<header role="banner">
-  <h1>Your Name</h1>
-  <p>Frontend Developer focused on accessibility and semantic HTML</p>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-  <nav aria-label="Primary navigation">
-    <ul>
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
 
-<main id="main">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
 
-  <section aria-labelledby="intro-title">
-    <h2 id="intro-title">Introduction</h2>
-    <p>
-      Building accessible, scalable web applications using semantic HTML5 and WCAG principles.
-    </p>
-  </section>
+        <div class="hero-content">
 
-  <section aria-labelledby="highlights-title">
-    <h2 id="highlights-title">Highlights</h2>
+            <div class="hero-text">
+                <h1>Hello, I'm Sanjay</h1>
+                <p>Frontend Developer | ECE Student | Web Designer</p>
+                <a href="#" class="btn">Download Resume</a>
+            </div>
 
-    <article>
-      <h3>Accessibility First</h3>
-      <p>Interfaces designed for keyboard and screen reader users.</p>
-    </article>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/300" alt="Profile">
+            </div>
 
-    <article>
-      <h3>Semantic Architecture</h3>
-      <p>Clean HTML structure that improves SEO and maintainability.</p>
-    </article>
+        </div>
 
-  </section>
+    </section>
 
-</main>
+    <!-- About -->
+    <section id="about" class="about">
 
-<footer role="contentinfo">
-  <p>&copy; 2026 Your Name. All rights reserved.</p>
-</footer>
+        <h2>About Me</h2>
+
+        <div class="about-grid">
+
+            <div class="card">
+                <h3>Education</h3>
+                <p>B.Tech in Electronics and Communication Engineering.</p>
+            </div>
+
+            <div class="card">
+                <h3>Skills</h3>
+                <p>HTML, CSS, JavaScript, Embedded Systems, Python.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive personal portfolio website.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>IoT Project</h3>
+                <p>Smart monitoring system using sensors.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Embedded System</h3>
+                <p>Microcontroller-based automation project.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <button class="btn">Send Message</button>
+
+        </form>
+
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
